@@ -1,0 +1,244 @@
+body{
+    background: url("back.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    
+}
+#menu{
+ font-size:40px; 
+ color:white;
+ padding:10px; 
+ display: none; 
+}
+.cover{
+    height: 100%;
+    width:100%;
+    position: fixed;
+     background-color: black;
+    position: absolute;
+    opacity: 0.5;   
+    display: hidden;    
+    /*border: 1px solid pink;*/
+    z-index: -10;
+    
+}
+
+.left{
+    
+    width:10%;
+    margin-left: 0px;
+    padding: 0;
+    /*border: 1px solid red;*/
+    float: left;
+  /*background-color: pink;*/
+  height: 100%;
+  text-align: center;
+  
+    
+}
+.left ul li {
+    margin-right: 80px;
+    font-size: 13px;
+}
+
+ul{
+    list-style-type: none;
+    padding-top: 10px;
+    color:white;    
+    text-align: center;
+    
+}
+li span{
+    font-size: 30px;
+    /*left:0;*/
+    color: lightblue;
+    opacity: 0.7;   
+    /*padding:20px 10px 10px 0px;*/
+    padding-top: 20px;
+    text-align: center;
+}
+li:hover{
+    color:lightblue;
+    text-shadow:5px 5px 10px black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+li span:hover{
+    color:white;
+    text-shadow:5px 5px 10px black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.right{
+    height: 100%;
+    width:90%;
+    padding: 30px;
+    padding-top:150px;
+    padding-left:70px;
+    /*border: 1px solid green;*/
+    float: right;
+}
+
+.intro{
+    /*border: 1px solid yellow;*/
+    color:white;
+    width:70%;
+    
+    float: left;
+     
+}
+.intro h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Acme', sans-serif;
+    font-family: 'EB Garamond', serif;
+    margin-bottom: -10px;
+}
+
+.intro h2{
+    font-size: 35px;
+    font-weight: 600;
+     font-family: 'Dancing Script', cursive;
+     text-align: right;
+     margin-top:-10px;
+}
+hr {
+  border:none;
+  height: 20px;
+ 	width: 90%;
+	height: 50px;
+	margin-top: 0;
+	border-bottom: 10px solid #1f1209;
+	box-shadow: 10 210px 210px -210px white;
+ 
+}
+
+.txt{
+    font-size:24px;
+    font-family: 'Dancing Script', cursive;
+    line-height: 25px;
+}
+a{
+    text-decoration: none;
+}
+.cv{
+
+    padding:10px 15px 10px 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+.cv:hover{
+    background-color: black;
+    transition: 0.3s;
+    opacity: 0.6;
+    border: 2px solid white;
+}
+
+.social{
+    text-align: center;
+     /*margin-top:-30px;*/
+     /*border: 1px solid pink;*/
+     width: 30%;
+     float: right;
+}
+.social ul li{
+    padding-top:30px;
+}
+.img{
+
+    height: 60px;
+    width: 60px;
+}
+
+.connect-with-me{
+    color:white; 
+    text-align:center;
+}
+
+@media only screen and (max-width: 725px) {
+    .right{
+        padding-left: 0px;
+        padding-top:0px;
+        /*border: 1px solid red;*/
+        margin-right: 5%;
+    }
+
+    .left{
+
+            z-index: 1;
+        width:140px;
+        margin-top:-1px;
+        height: 100%;
+        left: -200px;
+        background-color: #171b21;
+        padding: 10px;
+        padding-top: 20px;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    .txt{
+        font-size: 20px;
+    }
+    .intro h1{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .intro h2{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .glyphicon{
+        color:white;
+    }
+    .social{
+        position: relative;
+        width:100%;
+    }
+    .social li{
+       display: inline;
+    }
+    .img{
+        height: 30px;
+        width:30px;
+    }
+    .connect-with-me{
+        font-size: 27px;
+    }
+    .intro{
+        width:100%;        
+    }
+
+    #menu{
+        display: block;
+        float: right;
+
+    }
+
+}
+@media (max-width:725px) and (min-width:500px) {
+   .intro{
+       margin-left: 0px;
+       padding-top: 70px;
+   }
+}
+
+@media (max-width:1000px) and (min-width:726px) {
+   .left{
+       margin-left: 0px;
+       padding-right: 40px;
+   }
+}
+
+.bar{
+    left:0;
+}
