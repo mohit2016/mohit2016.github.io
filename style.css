@@ -1,49 +1,36 @@
 body{
-    background: url("back.jpg");
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url("img/back.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 30%;
     padding: 0;
     margin: 0;
-    opacity: 1;
-    
-}
-#menu{
- font-size:40px; 
- color:white;
- padding:10px; 
- display: none; 
-}
-.cover{
-    height: 100%;
-    width:100%;
-    position: fixed;
-     background-color: black;
-    position: absolute;
-    opacity: 0.5;   
-    display: hidden;    
-    /*border: 1px solid pink;*/
-    z-index: -10;
-    
+    opacity: 1;    
 }
 
-.left{
-    
+#menu{
+    font-size:40px; 
+    color:white;
+    padding:10px; 
+    display: none; 
+}
+
+.left{    
     width:10%;
     margin-left: 0px;
     padding: 0;
     /*border: 1px solid red;*/
     float: left;
-  /*background-color: pink;*/
-  height: 100%;
-  text-align: center;
-  
-    
+    /*background-color: pink;*/
+    height: 100%;
+    text-align: center;
+
 }
 .left ul li {
     margin-right: 80px;
     font-size: 13px;
+    
 }
 
 ul{
@@ -90,10 +77,9 @@ li span:hover{
     /*border: 1px solid yellow;*/
     color:white;
     width:70%;
-    
     float: left;
-     
 }
+
 .intro h1{
     font-size: 50px;
     font-weight: 700;
@@ -103,15 +89,15 @@ li span:hover{
 }
 
 .intro h2{
-    font-size: 35px;
-    font-weight: 600;
+     font-size: 35px;
+     font-weight: 600;
      font-family: 'Dancing Script', cursive;
      text-align: right;
      margin-top:-10px;
 }
 hr {
-  border:none;
-  height: 20px;
+    border:none;
+    height: 20px;
  	width: 90%;
 	height: 50px;
 	margin-top: 0;
@@ -173,15 +159,15 @@ a{
     }
 
     .left{
-
-            z-index: 1;
+        overflow: scroll;
+        z-index: 1;
         width:140px;
-        margin-top:-1px;
-        height: 100%;
+        margin-top:0px;
+        height: 100vh;
         left: -200px;
         background-color: #171b21;
         padding: 10px;
-        padding-top: 20px;
+        padding-top: 0px;
         position: absolute;
         transition: 0.5s;
     }
